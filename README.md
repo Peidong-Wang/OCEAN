@@ -7,7 +7,7 @@ This repo is inspired by and largely dependent on THOP: https://github.com/Lyken
 
 ## How to install 
     
-`pip setup.py install`
+`python setup.py install`
 
 <!-- `pip install thop` (now continously intergrated on [Github actions](https://github.com/features/actions))
 
