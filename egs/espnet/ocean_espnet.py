@@ -11,4 +11,5 @@ ys_pad = torch.tensor([[0]], dtype=torch.long)
 
 macs, params = profile(model, inputs=(input, ilens, ys_pad, ))
 
-print("macs: " + str(macs))  # TODO: Change to .format string.
+print("macs: {}".format(macs))
+print("params: {}".format(macs))
