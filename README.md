@@ -3,7 +3,7 @@
 
 ## Acknowledgement
 
-This repo is inspired by and largely dependent on THOP: https://github.com/Lyken17/pytorch-OpCounter.git. We focus on the evaluation of end-to-end ASR models.
+This repo is inspired by and largely dependent on THOP: https://github.com/Lyken17/pytorch-OpCounter.git. We focus on the evaluation of audio/speech processing models.
 
 ## How to install 
     
