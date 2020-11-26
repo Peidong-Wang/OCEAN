@@ -25,12 +25,12 @@ setup(
     name='ocean',
     version=VERSION,
     author='Peidong Wang',
-    author_email='peidong-wang@outlook.com',
+    author_email='peidong-wang@ieee.org',
     url='',
-    description='A tool to count the operations of end-to-end ASR models.',
+    description='A tool to count the operations of efficient audio and speech processing neural networks.',
     long_description=readme,
     long_description_content_type='text/markdown',
-    license='MIT',
+    license='Apache-2.0',
 
     # Package info
     packages=find_packages(exclude=('*test*',)),
