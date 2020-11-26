@@ -1,7 +1,7 @@
 from distutils.version import LooseVersion
 
 from ocean.vision.basic_hooks import *
-from ocean.speech.basic_hooks import *
+# from ocean.audio.basic_hooks import *
 from ocean.rnn_hooks import *
 
 
