@@ -5,6 +5,10 @@
 
 This repo is inspired by and largely dependent on THOP: https://github.com/Lyken17/pytorch-OpCounter.git. We focus on the evaluation of audio/speech processing models.
 
+## Slack Group
+
+https://join.slack.com/t/ocean-zdz3431/shared_invite/zt-jns0uib8-7nEYX8HNq0eq3LYq2Lj8rw
+
 ## How to install 
     
 `python setup.py install`
