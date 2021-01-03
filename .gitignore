@@ -107,3 +107,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Models and Json files for egs/espnet.
+*.best
+*.json
