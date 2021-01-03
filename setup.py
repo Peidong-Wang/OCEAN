@@ -1,46 +1,15 @@
-#!/usr/bin/env python
-import os, sys
-import shutil
-import datetime
-
-from setuptools import setup, find_packages
-from setuptools.command.install import install
-
-readme = open('README.md').read()
-
-VERSION = '0.0.4'
-
-requirements = [
-    'torch',
-]
-
-# import subprocess
-# commit_hash = subprocess.check_output("git rev-parse HEAD", shell=True).decode('UTF-8').rstrip()
-# VERSION += "_" + str(int(commit_hash, 16))[:8]
-VERSION += "_" + datetime.datetime.now().strftime('%Y%m%d%H%M')[2:]
-# print(VERSION)
+from setuptools import find_packages, setup
+from ocean import __version__
 
 setup(
-    # Metadata
     name='ocean',
-    version=VERSION,
-    author='Peidong Wang',
-    author_email='peidong-wang@ieee.org',
-    url='',
-    description='A tool to count the operations of efficient audio and speech processing neural networks.',
-    long_description=readme,
-    long_description_content_type='text/markdown',
-    license='Apache-2.0',
-
-    # Package info
-    packages=find_packages(exclude=('*test*',)),
-
-    #
-    zip_safe=True,
-    install_requires=requirements,
-
-    # Classifiers
-    classifiers=[
-        'Programming Language :: Python :: 3',
+    version=__version__,
+    packages=find_packages(exclude=['egs']),
+    install_requires=[
+        'numpy>=1.14',
+        'torch>=1.7',
+        'torchvision>=0.4',
     ],
+    url='https://github.com/Peidong-Wang/OCEAN',
+    license='Apache-2.0',
 )
