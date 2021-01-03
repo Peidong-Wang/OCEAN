@@ -15,5 +15,5 @@ ys_pad = torch.tensor([[0]], dtype=torch.long)
 model.eval()
 macs = profile_macs(model, (inputs, ilens, ys_pad))
 
-# Print MACS.
-print("MACS: {}".format(macs))
+# Print MACs.
+print("MACs: {}".format(macs))

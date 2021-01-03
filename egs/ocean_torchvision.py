@@ -14,4 +14,4 @@ if __name__ == '__main__':
             inputs = torch.randn(1, 3, 299, 299)
 
         macs = profile_macs(model, inputs)
-        print('MACS: {}: {:.4g} G'.format(name, macs / 1e9))
+        print('MACs: {}: {:.4g} G'.format(name, macs / 1e9))

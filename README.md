@@ -3,14 +3,14 @@
 
 ## Updates and Acknowledgement
 
-The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile. The THOP based version is saved to *thop* branch.
+The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile. The THOP based version is saved to the *thop* branch.
 
 ## How to install 
 
 `python setup.py install`
 
 ## How to use 
-* Installation verification:
+### Installation verification:
 
 Define PyTorch model and its (dummy) input:
 
@@ -30,11 +30,11 @@ from ocean import profile_macs
 macs = profile_macs(model, inputs)
 ```
 
-* Examples:
+### Examples:
 
 Check out the `egs/` folder.
 
-* Register handlers:
+### Register handlers:
 
 For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
 

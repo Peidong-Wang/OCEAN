@@ -13,4 +13,4 @@ if __name__ == '__main__':
     )
 
     macs = profile_macs(model, inputs)
-    print('MACS: {:.4g} G'.format(macs / 1e9))
+    print('MACs: {:.4g} G'.format(macs / 1e9))

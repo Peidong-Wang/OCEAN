@@ -10,4 +10,4 @@ if __name__ == '__main__':
     inputs = torch.randn(1, in_features)
 
     macs = profile_macs(model, inputs)
-    print("MACS: {}".format(macs))
+    print("MACs: {}".format(macs))
