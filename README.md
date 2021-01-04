@@ -3,40 +3,42 @@
 
 ## Updates and Acknowledgement
 
-The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile. The THOP based version is saved to the *thop* branch.
+1. The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile.
+2. The THOP (https://github.com/Lyken17/pytorch-OpCounter.git) based version is saved to the *thop* branch.
 
-## How to install 
+## How to install and use
 
-`python setup.py install`
+1. Installation:
 
-## How to use 
-### Installation verification:
+> `python setup.py install`
 
-Define PyTorch model and its (dummy) input:
+2. A simple example:
 
-```python
-import torch
-from torchvision.models import resnet18
+> Define PyTorch model and its (dummy) input:
 
-model = resnet18()
-inputs = torch.randn(1, 3, 224, 224)
-```
+> ```python
+> import torch
+> from torchvision.models import resnet18
 
-Measure the number of MACs using `profile_macs`:
+> model = resnet18()
+> inputs = torch.randn(1, 3, 224, 224)
+> ```
 
-```python
-from ocean import profile_macs
+> Measure the number of MACs using `profile_macs`:
 
-macs = profile_macs(model, inputs)
-```
+> ```python
+> from ocean import profile_macs
 
-### Examples:
+> macs = profile_macs(model, inputs)
+> ```
 
-Check out the `egs/` folder.
+3. Examples:
 
-### Register handlers:
+> Check out the `egs/` folder.
 
-For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
+4. Handler registration:
+
+> For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
 
 ## Slack Group
 
