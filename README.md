@@ -27,7 +27,7 @@
 
 4. Handler registration:
 
-> For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
+For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
 
 &nbsp;
 
