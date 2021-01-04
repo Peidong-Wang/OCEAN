@@ -1,12 +1,5 @@
 <!-- # OCEAN: Operation Counter for Efficient Audio/Speech Processing Networks -->
 
-## Updates and Acknowledgement
-
-1. The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile.
-2. The THOP (https://github.com/Lyken17/pytorch-OpCounter.git) based version is saved to the *thop* branch.
-
-&nbsp;
-
 ## How to install and use
 
 1. Installation:
@@ -35,6 +28,13 @@
 4. Handler registration:
 
 > For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
+
+&nbsp;
+
+## Updates and Acknowledgement
+
+1. The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile.
+2. The THOP (https://github.com/Lyken17/pytorch-OpCounter.git) based version is saved to the *thop* branch.
 
 &nbsp;
 
