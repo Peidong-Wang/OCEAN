@@ -1,6 +1,6 @@
 <!-- # OCEAN: Operation Counter for Efficient Audio/Speech Processing Networks -->
 
-## How to install and use
+## How to Install and Use
 
 1. Installation:
 
