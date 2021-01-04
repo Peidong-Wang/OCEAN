@@ -15,20 +15,15 @@
 2. A simple example:
 
 > Define PyTorch model and its (dummy) input:
-
 > ```python
 > import torch
 > from torchvision.models import resnet18
-
 > model = resnet18()
 > inputs = torch.randn(1, 3, 224, 224)
 > ```
-
 > Measure the number of MACs using `profile_macs`:
-
 > ```python
 > from ocean import profile_macs
-
 > macs = profile_macs(model, inputs)
 > ```
 
