@@ -5,6 +5,7 @@
 1. The default version of OCEAN now uses torch.jit.trace as in torchprofile: https://github.com/zhijian-liu/torchprofile.
 2. The THOP (https://github.com/Lyken17/pytorch-OpCounter.git) based version is saved to the *thop* branch.
 
+&nbsp;
 
 ## How to install and use
 
@@ -35,6 +36,7 @@
 
 > For warnings like `UserWarning: No handlers found: "aten::<a specific operation>". Skipped.`, please register the missing handler to `ocean/handlers.py`.
 
+&nbsp;
 
 ## Slack Group
 
