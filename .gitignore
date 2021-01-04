@@ -1,4 +1,12 @@
 .vscode/
 __pycache__/
+
+# Build files.
+build/
+dist/
+*.egg-info/
+.github/
+
+# Model files for egs/espnet.
 *.best
 *.json
